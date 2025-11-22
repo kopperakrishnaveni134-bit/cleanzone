@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanZone - Smart Community Cleanliness Reporter</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f3f7f3;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+      background: #2ecc71;
+      padding: 20px;
+      text-align: center;
+      font-size: 30px;
+      color: white;
+      font-weight: 600;
+      letter-spacing: 1px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      color: #1e8449;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #444;
+      max-width: 700px;
+      margin: auto;
+      animation: fadeInUp 1s ease;
+    }
+
+    /* Features */
+    .features {
+      max-width: 1100px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      color: #27ae60;
+      margin-bottom: 10px;
+    }
+
+    /* Button */
+    .report-btn {
+      display: block;
+      margin: 40px auto;
+      padding: 15px 40px;
+      font-size: 22px;
+      color: #fff;
+      background: #27ae60;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    .report-btn:hover {
+      background: #1e8449;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      text-align: center;
+      background: #2ecc71;
+      color: white;
+      font-size: 15px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  CleanZone – Smart Public Cleanliness Monitor
+</header>
+
+<section class="hero">
+  <h1>Report Unclean Areas Instantly</h1>
+  <p>CleanZone allows citizens, students, and staff to report dirty streets, toilets, classrooms, and public zones.  
+  Our AI chatbot collects the report and forwards it to authorities.</p>
+</section>
+
+<section class="features">
+  <div class="card">
+    <h3>📍 Location Tracking</h3>
+    <p>Share the exact location of the unclean area using chat.</p>
+  </div>
+
+  <div class="card">
+    <h3>📸 Upload Photos</h3>
+    <p>Attach photos of the issue for faster action.</p>
+  </div>
+
+  <div class="card">
+    <h3>⚡ Fast Response</h3>
+    <p>Your report reaches the responsible team instantly.</p>
+  </div>
+
+  <div class="card">
+    <h3>🤖 Smart Chatbot</h3>
+    <p>CleanZone Bot guides you step-by-step to submit your complaint.</p>
+  </div>
+</section>
+
+<button class="report-btn" onclick="startChat()">
+  🚀 Start CleanZone Chat
+</button>
+
+<footer>
+  © 2025 CleanZone | Built for Smart Communities
+</footer>
+
+<script>
+  function startChat() {
+    $zoho.salesiq.floatbutton.visible("show");
+  }
+</script>
+
+
+
+</body>
+</html>
